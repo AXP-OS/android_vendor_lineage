@@ -3,8 +3,8 @@ $(call inherit-product, vendor/lineage/config/common.mk)
 
 # Default notification/alarm sounds
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.notification_sound=Argon.ogg \
-    ro.config.alarm_alert=Hassium.ogg
+    ro.config.notification_sound=Pong.ogg \
+    ro.config.alarm_alert=Alarm_Buzzer.ogg
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # Thank you, please drive thru!
@@ -18,22 +18,17 @@ PRODUCT_PACKAGES += \
 
 # AOSP packages
 PRODUCT_PACKAGES += \
-    Email \
     ExactCalculator \
-    Exchange2
 
 # Lineage packages
 PRODUCT_PACKAGES += \
-    AudioFX \
     Backgrounds \
-    Eleven \
     Etar \
     Jelly \
     LockClock \
     Profiles \
     Seedvault \
     TrebuchetQuickStep \
-    WeatherProvider
 
 # Accents
 PRODUCT_PACKAGES += \
