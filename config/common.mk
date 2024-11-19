@@ -239,7 +239,7 @@ ifdef LINEAGE_BUILDTYPE
     endif
 else
     # If LINEAGE_BUILDTYPE is not defined, set to UNOFFICIAL
-    LINEAGE_BUILDTYPE := UNOFFICIAL
+    LINEAGE_BUILDTYPE := dos
     LINEAGE_EXTRAVERSION :=
 endif
 
@@ -279,8 +279,6 @@ else
     endif
 endif
 
-PRODUCT_EXTRA_RECOVERY_KEYS += \
-    vendor/lineage/build/target/product/security/lineage
 
 -include vendor/lineage-priv/keys/keys.mk
 
@@ -311,3 +309,4 @@ endif
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/lineage/config/partner_gms.mk
+include vendor/divested/divestos.mk
