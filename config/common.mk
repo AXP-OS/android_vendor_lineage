@@ -28,7 +28,6 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/lineage/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/lineage/prebuilt/common/bin/50-lineage.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-lineage.sh
 
 ifneq ($(strip $(AB_OTA_PARTITIONS) $(AB_OTA_POSTINSTALL_CONFIG)),)
 PRODUCT_COPY_FILES += \
@@ -236,7 +235,7 @@ ifdef LINEAGE_BUILDTYPE
     endif
 else
     # If LINEAGE_BUILDTYPE is not defined, set to UNOFFICIAL
-    LINEAGE_BUILDTYPE := UNOFFICIAL
+    LINEAGE_BUILDTYPE := SLIM
     LINEAGE_EXTRAVERSION :=
 endif
 
@@ -276,8 +275,6 @@ else
     endif
 endif
 
-PRODUCT_EXTRA_RECOVERY_KEYS += \
-    vendor/lineage/build/target/product/security/lineage
 
 -include vendor/lineage-priv/keys/keys.mk
 
@@ -308,3 +305,4 @@ endif
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/lineage/config/partner_gms.mk
+include vendor/divested/divestos.mk
