@@ -42,18 +42,6 @@
         <item>org.microg.nlp</item>
     </string-array>
 
-    <string-array name="config_locationExtraPackageNames" translatable="false">
-        <!-- Bluetooth -->
-        <item>com.android.bluetooth</item>
-        <!-- TeleService -->
-        <item>com.android.phone</item>
-        <!-- CneApp -->
-        <item>com.qualcomm.qti.cne</item>
-        <!-- ImsService -->
-        <item>com.shannon.imsservice</item>
-        <!-- MediaTek ImsService -->
-        <item>com.mediatek.ims</item>
-    </string-array>
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
@@ -74,7 +62,6 @@
     <bool name="config_enableMultiUserUI">true</bool>
 
     <!--  Maximum number of supported users -->
-    <integer name="config_multiuserMaximumUsers">4</integer>
 
    <!-- Set icon mask to circle -->
    <string name="config_icon_mask" translatable="false">"M50 0A50 50,0,1,1,50 100A50 50,0,1,1,50 0"</string>
