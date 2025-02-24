@@ -3,8 +3,8 @@ $(call inherit-product, vendor/lineage/config/common.mk)
 
 # Default notification/alarm sounds
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.notification_sound=Argon.ogg \
-    ro.config.alarm_alert=Hassium.ogg
+    ro.config.notification_sound=Pong.ogg \
+    ro.config.alarm_alert=Alarm_Buzzer.ogg
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # Thank you, please drive thru!
@@ -22,7 +22,6 @@ PRODUCT_PACKAGES += \
 
 # Lineage packages
 PRODUCT_PACKAGES += \
-    AudioFX \
     Backgrounds \
     Etar \
     Jelly \
